@@ -1,0 +1,47 @@
+.presentation {
+    display: block;
+    background-color: $brand-color-background;
+    @include common.container;
+    @include common.section;
+}
+
+.article {
+    margin-bottom: 94px;
+    & h3 {
+            font-weight: 700;
+            font-size: 14px;
+            line-height: 1.1428;
+            letter-spacing: 0.03em;
+            text-transform: uppercase;
+        }
+    
+        & p {
+            font-size: 14px;
+            line-height: 1.714;
+            letter-spacing: 0.03em;
+            color: $brand-color-article-p;
+        }
+    
+        &__box {
+            display: flex;
+            list-style: none;
+            padding: 0px;
+            margin: 0px;
+            justify-content: center;
+            gap: 30px;
+        }
+    
+        &__list {
+            @include common.display;
+            width: 270px;
+            height: 120px;
+            background-color: $brand-color-main-article-box-background;
+            margin-bottom: 30px;
+        }
+    
+        &__images {
+            width: 70px;
+            height: 70px;
+        }
+}
+

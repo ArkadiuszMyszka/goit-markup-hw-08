@@ -1,0 +1,27 @@
+@use "./utils/variables" as *;
+@use "./utils/common";
+
+body {
+    font-family: $overall-fonts;
+    background: $brand-color-background-overall;
+    color: $brand-color-font-overall;
+}
+
+h1,
+h2,
+h3,
+p {
+    margin: 0px;
+}
+
+@import "./components/header";
+@import "./components/title";
+@import "./components/footer";
+@import "./components/theme";
+@import "./components/article";
+@import "./components/domain";
+@import "./components/team";
+@import "./components/clients";
+@import "./components/modal";
+@import "./components/portfolio";
+@import "./components/project";

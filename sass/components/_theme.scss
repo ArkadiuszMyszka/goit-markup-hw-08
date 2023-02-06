@@ -1,0 +1,60 @@
+.theme {
+    display: block;
+    background-color: $brand-color-background-main-top;
+    &__section {
+            background-image: linear-gradient(0deg,
+                    rgba(47, 48, 58, 0.4) 0%,
+                    rgba(47, 48, 58, 0.4) 100%),
+                url("../images/peopleonmeeting.jpg");
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-color: $brand-color-background-main-top;
+            height: 600px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 1200px;
+            margin: 0px auto;
+        }
+    
+        &__label {
+            display: flex;
+            padding-top: 200px;
+            width: 696px;
+            height: 120px;
+            margin-bottom: 30px;
+            font-weight: 900;
+            font-size: 44px;
+            line-height: 1.364;
+            text-align: center;
+            letter-spacing: 0.06em;
+            text-transform: uppercase;
+            color: $brand-color-main-top-text;
+        }
+    
+        &__text {
+            font-weight: 900;
+            font-size: 44px;
+            line-height: 1.364;
+            text-align: center;
+            letter-spacing: 0.06em;
+            text-transform: uppercase;
+            color: $brand-color-main-top-text;
+        }
+    
+        &__button {
+            @include common.display;
+            margin-top: 130px;
+            
+            cursor: pointer;
+            background-color: $brand-color-hover;
+            box-shadow: 0px 4px 4px $brand-color-main-button-boxshadow;
+            border-radius: 4px;
+            border-color: $brand-color-hover;
+            width: 200px;
+            height: 50px;
+            color: $brand-color-button-mainpage;
+        }
+}
+

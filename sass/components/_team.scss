@@ -1,0 +1,101 @@
+.team {
+    display: block;
+    background-color: $brand-color-main-bottom-background;
+    @include common.section;
+    &__section {
+            display: flex;
+            flex-direction: column;
+            background-color: $brand-color-main-bottom-background;
+            align-items: center;
+            width: 1200px;
+            margin: 0px auto;
+            & h2 {
+                    font-size: 36px;
+                    line-height: 1.167;
+                    text-align: center;
+                    letter-spacing: 0.03em;
+            
+                }
+            
+                & h3 {
+                    margin-bottom: 10px;
+                    font-weight: 500;
+                    font-size: 16px;
+                    line-height: 1.188;
+                    text-align: center;
+                    letter-spacing: 0.03em;
+                }
+            
+                & p {
+                    font-size: 16px;
+                    line-height: 1.188;
+                    text-align: center;
+                    letter-spacing: 0.03em;
+                    color: $brand-color-article-p;
+                }
+        }
+    
+    
+        &__box {
+            display: flex;
+            list-style: none;
+            justify-content: center;
+            margin-top: 50px;
+            gap: 30px;
+            padding: 0px;
+        }
+    
+        &__list {
+            display: flex;
+            flex-direction: column;
+            background-color: $brand-color-background-overall;
+            box-shadow: $main-bottom-list-box-shadow;
+            border-radius: 0px 0px 4px 4px;
+        }
+    
+        &__figure {
+            margin: 0;
+            margin-bottom: 16px;
+        }
+    
+        &__figcaption {
+            margin-top: 30px;
+        }
+    
+        &__media {
+            @include common.display;
+            padding-bottom: 30px;
+            padding-left: 0px;
+            gap: 10px;
+        }
+    
+        &__media-list {
+            display: flex;
+            &:hover,
+                &:focus-within {
+                    --color3: #FFFFFF;
+                }
+        }
+    
+        
+    
+        &__link {
+            fill: $brand-color-footer-icons-background;
+            transition-property: color, fill;
+            @include common.transition;
+            &:hover,
+                &:focus {
+                    fill: $brand-color-hover;
+                }
+        }
+    
+        
+    
+        &__icon {
+            width: 44px;
+            height: 44px;
+            border-radius: 50%;
+            cursor: pointer;
+        }
+}
+

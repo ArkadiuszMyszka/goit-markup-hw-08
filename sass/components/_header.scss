@@ -1,0 +1,110 @@
+.header {
+    background-color: $brand-color-background;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+    border-bottom: 1px solid $brand-color-header-border;
+    @include common.container;
+
+    &__name {
+            margin-right: 93px;
+    }
+    &__pages {
+            display: flex;
+            list-style: none;
+            align-items: center;
+            padding: 0px;
+
+            & a {
+                    font-weight: 500;
+                    font-size: 14px;
+                    line-height: 1.1428;
+                    letter-spacing: 0.02em;
+                    text-decoration: none;
+                }
+        }
+        &__nav-list {
+            margin-right: 46px;
+        }
+    &__pages-list--active::after {
+        content: "";
+        position: relative;
+        right: 0px;
+        bottom: -30px;
+        background: $brand-color-hover;
+        height: 4px;
+        display: block;
+        border-radius: 2px;
+    }
+    &__link {
+        transition-property: color;
+        @include common.transition;
+        &--active {
+                color: $brand-color-hover;
+            }
+        &:hover,
+        &:focus-within {
+            color: $brand-color-hover;
+        }
+    }
+    &__contacts {
+        display: flex;
+        list-style: none;
+
+    }
+        &__contacts-list {
+            margin-left: 50px;
+            display: flex;
+            align-items: center;
+        }
+                &__contacts-link {
+                    display: flex;
+                    align-items: center;
+                    text-decoration: none;
+                    font-weight: 500;
+                    font-size: 14px;
+                    line-height: 1.1428;
+                    letter-spacing: 0.02em;
+                    color: $brand-color-contact-header;
+                    transition-property: color, fill;
+                    fill: $brand-color-svg;
+                    @include common.transition;
+                    &:hover,
+                        &:focus-within {
+                            color: $brand-color-hover;
+                            fill: $brand-color-hover;
+                        }
+                }
+                                &__tel {
+                                    display: flex;
+                                    align-items: center;
+                                    font-weight: 500;
+                                    font-size: 14px;
+                                    line-height: 1.1428;
+                                    letter-spacing: 0.02em;
+                                    text-decoration: none;
+                                    color: $brand-color-contact-header;
+                                }
+    &__icon-mail {
+        width: 16px;
+        height: 12px;
+        margin-right: 10px;
+        cursor: pointer;
+    }
+        &__icon-phone {
+            width: 10px;
+            height: 16px;
+            margin-right: 10px;
+            cursor: pointer;
+        }
+}
+
+
+
+
+
+
+
+
+
