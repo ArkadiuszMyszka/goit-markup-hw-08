@@ -217,6 +217,7 @@ p {
   max-height: 0px;
   padding: 0px;
   margin: 0px;
+  display: none;
 }
 
 .header__pages {
@@ -226,6 +227,7 @@ p {
   max-height: 0px;
   padding: 0px;
   margin: 0px;
+  display: none;
 }
 
 .main {
@@ -235,6 +237,7 @@ p {
   max-height: 0px;
   padding: 0px;
   margin: 0px;
+  display: none;
 }
 
 .footer-box {
@@ -245,6 +248,7 @@ p {
   max-height: 0px;
   padding: 0px;
   margin: 0px;
+  display: none;
 }
 
 .backdrop {
@@ -254,4 +258,5 @@ p {
   max-height: 0px;
   padding: 0px;
   margin: 0px;
+  display: none;
 }/*# sourceMappingURL=main.css.map */
