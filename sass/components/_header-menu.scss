@@ -1,0 +1,135 @@
+.menu-toggle {
+    min-height: 40px;
+    min-width: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin: 0;
+    padding: 0;
+    background-color: transparent;
+    cursor: pointer;
+    border: none;
+    border-radius: 50%;
+    outline: none;
+    transition-property: fill;
+    @include common.transition;
+                
+        &:hover svg,
+        &:focus svg {
+            fill: $brand-color-hover;
+        }
+       
+}
+
+@media (min-width: 768px) {
+    .menu-toggle {
+        display: none;
+    }
+}
+
+
+.menu-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    padding: 48px 40px;
+    background-color: $brand-color-background-overall;
+    z-index: 999;
+    display: flex;
+    justify-content: space-between;
+    transform: translateX(100%);
+    transition: transform 250ms ease-in-out;
+    flex-direction: column;
+    
+    &.is-open {
+            transform: translateX(0);
+        }
+    & a {
+        font-weight: 500;
+    }    
+    & .menu-toggle {
+        position: absolute;
+        top: 16px;
+        right: 16px;
+        color: #fff;
+    }
+    &__mobile-menu {
+        padding: 0;
+        margin: 0;
+        list-style: none;
+
+            & li {
+                margin-bottom: 32px;
+            }
+    }
+    &__link {
+        display: block;
+        padding: 10px;
+        color: $brand-color-font-overall;
+        text-decoration: none;
+        cursor: pointer;
+        font-size: 40px;
+        font-weight: 500;
+        transition-property: color;
+        @include common.transition;
+            
+            &:hover,
+            &:focus {
+                color: $brand-color-hover ;
+            }
+
+    }
+
+    &__media{
+        display: flex;
+        font-size: 18px;
+        list-style: none;
+        padding-left: 0px;
+        
+        
+        & a{
+            color: $brand-color-hover ;
+            text-decoration: none;
+            }
+        & li{
+        list-style: none;
+        }    
+        & li:not(:last-child){
+            padding-right: 10px;
+            border-right: 1px solid rgba(33, 33, 33, 0.2);
+        }
+        & li:not(:first-child) {
+            padding-left: 10px;
+        }
+    }
+    &__contact{
+        list-style: none;
+        padding-left: 0px;
+        margin-bottom: 64px;
+        & a {
+            text-decoration: none;
+        }                
+    }
+    &__phone{
+        margin-bottom: 32px;
+        font-size: 34px;
+        & a{
+            color:$brand-color-hover
+        }
+    }
+    &__mail{
+        
+        font-size: 24px;
+        & a{
+            
+            color: $brand-color-article-p;
+        }
+        
+    }
+}
+
+
+

@@ -14,7 +14,9 @@ p {
     margin: 0px;
 }
 
+
 @import "./components/header";
+@import "./components/header-menu";
 @import "./components/title";
 
 .header__contacts {
