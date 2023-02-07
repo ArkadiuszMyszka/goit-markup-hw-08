@@ -14,7 +14,25 @@ p {
     margin: 0px;
 }
 
+@import "./components/header";
+@import "./components/title";
 
+.header__contacts {
+    visibility: hidden;
+        opacity: 0;
+        max-width: 0px;
+        max-height: 0px;
+        padding: 0px;
+        margin: 0px;
+}
+.header__pages{
+    visibility: hidden;
+        opacity: 0;
+        max-width: 0px;
+        max-height: 0px;
+        padding: 0px;
+        margin: 0px;
+}
 .main {
     visibility: hidden;
         opacity: 0;
