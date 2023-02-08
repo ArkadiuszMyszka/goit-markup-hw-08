@@ -18,19 +18,20 @@ p {
 @import "./components/header";
 @import "./components/header-menu";
 @import "./components/title";
+@import "./components/theme";
 
-.header__contacts {
-    
-        display: none;
-}
-.header__pages{
-    
-        display: none;
-}
-.main {
+.presentation {
     
     display: none;
 }
+.team {
+
+                display: none;
+        }
+.clients {
+
+                display: none;
+        }
 
 .footer-box{
 
