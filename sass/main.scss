@@ -20,51 +20,25 @@ p {
 @import "./components/title";
 
 .header__contacts {
-    visibility: hidden;
-        opacity: 0;
-        max-width: 0px;
-        max-height: 0px;
-        padding: 0px;
-        margin: 0px;
+    
         display: none;
 }
 .header__pages{
-    visibility: hidden;
-        opacity: 0;
-        max-width: 0px;
-        max-height: 0px;
-        padding: 0px;
-        margin: 0px;
+    
         display: none;
 }
 .main {
-    visibility: hidden;
-        opacity: 0;
-        max-width: 0px;
-    max-height: 0px;
-    padding: 0px;
-    margin: 0px;
+    
     display: none;
 }
 
 .footer-box{
-visibility: hidden;
-    opacity: 0;
-    max-width: 0px;
-    max-width: 0px;
-        max-height: 0px;
-        padding: 0px;
-        margin:0px;
+
         display: none;
 }
 
 .backdrop {
-    visibility: hidden;
-        opacity: 0;
-    max-width: 0px;
-        max-height: 0px;
-        padding: 0px;
-        margin: 0px;
+   
         display: none;
 }
 
