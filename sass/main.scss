@@ -19,11 +19,8 @@ p {
 @import "./components/header-menu";
 @import "./components/title";
 @import "./components/theme";
+@import "./components/article";
 
-.presentation {
-    
-    display: none;
-}
 .team {
 
                 display: none;
@@ -42,4 +39,6 @@ p {
    
         display: none;
 }
-
+.domain {
+        display: none;
+}
