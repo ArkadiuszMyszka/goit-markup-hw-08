@@ -1,0 +1,66 @@
+.clients {
+    width: 480px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+        padding:60px 15px;
+        margin:0 auto;
+    & h2 {
+            margin-bottom: 30px;
+            font-size: 28px;
+        }
+    
+        &__box {
+            flex-basis: calc((100% - 1 * 30px) / 2);
+            gap: 30px;
+            padding: 0px;
+            margin: 0px;
+            display: flex;
+                list-style: none;
+                flex-wrap: wrap;
+                align-items: center;
+                justify-content: center;
+
+        }
+    
+        &__list {
+            display: flex;
+            width: 210px;
+            height: 92px;
+            border: 1px solid $brand-color-main-bottom-team-list-border;
+            border-radius: 4px;
+            &:hover,
+                &:focus-within {
+                    border: 1px solid $brand-color-hover;
+                    border-radius: 4px;
+                    --color3: #2196F3;
+                }
+        }
+    
+        
+    
+        &__link {
+            outline: none;
+            display: flex;
+            fill: $brand-color-svg-clients;
+            transition-property: color, fill;
+            @include common.transition;
+            &:hover,
+                &:focus {
+                    fill: $brand-color-hover;
+                }
+        }
+    
+       
+    
+        &__icon {
+            
+            padding-left: 32px;
+            padding-right: 32px;
+            object-fit: contain;
+            max-width: 210px;
+            max-height: 92px;
+            cursor: pointer;
+        }
+}
+
