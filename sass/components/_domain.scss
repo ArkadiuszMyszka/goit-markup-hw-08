@@ -1,4 +1,8 @@
-
+@media (max-width: 767px){
+    .domain {
+            display: none;
+        }
+}
 .domain {
     background-color: $brand-color-background;
     @include common.container;
