@@ -57,12 +57,18 @@
             border-radius: 0px 0px 4px 4px;
             
             
+            
         }
     
         &__figure {
             margin: 0;
             margin-bottom: 16px;
-            
+            & img{
+                max-width:100%;
+                display: block;
+                height: 460px;
+                width: 450px;
+            }
         }
     
         &__figcaption {

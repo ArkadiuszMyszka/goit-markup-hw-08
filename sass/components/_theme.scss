@@ -7,13 +7,13 @@
             background-image: linear-gradient(0deg,
                     rgba(47, 48, 58, 0.4) 0%,
                     rgba(47, 48, 58, 0.4) 100%),
-                url("../images/peopleonmeeting480.jpg");
+                url("../images/mobile/450/peopleonmeeting.jpg");
             background-size: cover;
             background-position: center;
             background-repeat: no-repeat;
             background-color: $brand-color-background-main-top;
             height: 400px;
-            
+           
             display: flex;
             flex-direction: column;
             justify-content: center;
@@ -64,3 +64,11 @@
         }
 }
 
+@media (min-device-pixel-ratio:2), (min-resolution: 192dpi),(min-resolution: 2ddpx) {
+    .theme__section{
+    background-image: linear-gradient(0deg,
+                rgba(47, 48, 58, 0.4) 0%,
+                rgba(47, 48, 58, 0.4) 100%),
+            url("../images/mobile/900/peopleonmeeting.jpg");
+    }
+}
