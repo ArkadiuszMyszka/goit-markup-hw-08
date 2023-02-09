@@ -24,7 +24,7 @@
     
         &__label {
             display: flex;
-            
+            max-width:400px;
             
             margin-bottom: 30px;
             font-weight: 900;
@@ -70,5 +70,30 @@
                 rgba(47, 48, 58, 0.4) 0%,
                 rgba(47, 48, 58, 0.4) 100%),
             url("../images/mobile/900/peopleonmeeting.jpg");
+    }
+}
+@media (min-width:768px){
+    .theme{
+        min-width: 768px;
+        display: block;
+            background-color: $brand-color-background-main-top;
+        &__section {
+                background-image: linear-gradient(0deg,
+                        rgba(47, 48, 58, 0.4) 0%,
+                        rgba(47, 48, 58, 0.4) 100%),
+                    url("../images/tablet/peopleonmeeting768.jpg");
+                background-size: cover;
+                background-position: center;
+                background-repeat: no-repeat;
+                background-color: $brand-color-background-main-top;
+                height: 400px;
+        
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                margin: 0px auto;
+        
+            }
     }
 }
