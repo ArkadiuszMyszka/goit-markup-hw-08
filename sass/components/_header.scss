@@ -37,6 +37,8 @@
     .header-mobile {
             display: none;
         }
+        
+
     .header {
             background-color: $brand-color-background;
             display: flex;
@@ -44,7 +46,7 @@
             align-items: center;
             height: 80px;
             border-bottom: 1px solid $brand-color-header-border;
-            width:768px;
+            
             padding-left: 15px;
             padding-right: 15px;
         &__name {
@@ -147,7 +149,7 @@
         }
     }
 }
-@media (min-width: 768px) {
+@media (min-width: 1200px) {
     .header {
         border-bottom: 1px solid $brand-color-header-border;
         @include common.container;
