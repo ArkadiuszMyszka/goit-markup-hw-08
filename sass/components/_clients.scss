@@ -50,7 +50,9 @@
         }
     
         &__icon {
-            
+            display: flex;
+            align-items: center;
+            justify-content: center;
             padding-left: 32px;
             padding-right: 32px;
             object-fit: contain;
@@ -77,4 +79,43 @@
                  }
     
         }
+}
+@media(min-width:1200px) {
+.clients {
+        min-width: 1200px;
+        @include common.container;
+        @include common.section;
+        padding-left: 0px;
+        padding-right: 0px;
+        
+
+        & h2 {
+            margin-bottom: 50px;
+            font-size: 36x;
+        }
+
+        &__box {                      
+            padding: 0px;            
+            flex-wrap: nowrap;
+        }
+
+        &__list {
+            width: 170px;
+            
+            
+
+        }
+
+        
+
+        &__icon {
+            
+            padding-left: 32px;
+            padding-right: 32px;
+            object-fit: contain;
+            max-width: 170px;
+            max-height: 92px;
+            cursor: pointer;
+        }
+    }
 }
