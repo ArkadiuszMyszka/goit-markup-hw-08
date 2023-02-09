@@ -65,6 +65,7 @@
 
 @media (min-width:768px){
     .article {
+
         &__box {
             flex-basis: calc((100% - 1 * 30px) / 2);
                 gap: 30px;
@@ -73,11 +74,33 @@
                 
             & li {
                 
-                width: 354px;
+                width: calc((100% - 1 * 30px) / 2);
             }
         }
         
     }
 
 }
+@media (min-width:1200px) {
+    .presentation {
+            display: block;
+            @include common.container;
+            @include common.section;
+        }
+    
+        .article {
+            margin-bottom: 94px;
+            
+            &__box {
+                flex-wrap: nowrap;
+                list-style: none;
+            }
+    
+            &__list {
+                @include common.display;
+                width: 100%;
+                margin-top: 0px;
+            }
+        }
 
+}

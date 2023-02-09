@@ -4,8 +4,8 @@
         }
 }
 .domain {
-    background-color: $brand-color-background;
-    @include common.container;
+        background-color: $brand-color-background;
+        
     & h2 {
             font-size: 36px;
             line-height: 1.167;
@@ -15,28 +15,24 @@
     
         &__box {
             display: flex;
+            margin-bottom: 0px;
+            align-items: center;
             list-style: none;
             margin-top: 50px;
             padding: 0px;
             justify-content: center;
             gap: 30px;
-            max-height: 294px;
+            
         }
     
         &__list {
             position: relative;
+            
         }
-    
-        &__picture {
-            display: block;
-            max-width: 100%;
-            height: auto;
-        }
-    
         &__label {
             @include common.display;
             height: 70px;
-            width: 370px;
+            width: 100%;
             position: absolute;
             bottom: 0px;
             color: $brand-color-font-overall-2;
