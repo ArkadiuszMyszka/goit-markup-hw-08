@@ -96,4 +96,14 @@
         
             }
     }
+        @media (min-device-pixel-ratio:2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2ddpx) {
+            .theme__section {
+                background-image: linear-gradient(0deg,
+                        rgba(47, 48, 58, 0.4) 0%,
+                        rgba(47, 48, 58, 0.4) 100%),
+                    url("../images/tablet/peopleonmeeting1536.jpg");
+            }
+        }
 }

@@ -4,13 +4,14 @@
     align-items: center;
     justify-content: center;
     background-color: $brand-color-background;
-   padding:60px 15px;
-   
+   padding:60px 15px 45px 15px;
+   margin: 0 auto;
+    
 
 }
 
 .article {
-    margin-bottom: 94px;
+   
     
     & h3 {
             font-weight: 700;
@@ -53,11 +54,30 @@
             background-color: $brand-color-main-article-box-background;
             margin-bottom: 30px;
             margin-top: 30px;
+            border-radius: 4px;
         }
     
         &__images {
             width: 70px;
             height: 70px;
         }
+}
+
+@media (min-width:768px){
+    .article {
+        &__box {
+            flex-basis: calc((100% - 1 * 30px) / 2);
+                gap: 30px;
+                display: flex;
+                flex-wrap: wrap;
+                
+            & li {
+                
+                width: 354px;
+            }
+        }
+        
+    }
+
 }
 
