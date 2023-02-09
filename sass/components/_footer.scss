@@ -13,13 +13,13 @@
     background-color: $brand-color-background-footer;
     
     &__contact {
-            display: flex;
+        display: flex;
             flex-direction: column;
-                justify-content: center;
-                align-items: center;
+            justify-content: center;
+            align-items: center;
         list-style: none;
-                        margin-top: 0px;
-            margin-bottom: 0px;
+        margin-top: 0px;
+        margin-bottom: 0px;
             
             padding-left: 0px;
             & li:not(:first-child){
@@ -168,31 +168,55 @@
 
         }
 
-        &__form {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-
-            transition-property: background-color;
-            @include common.transition;
-        }
-
-        &__input {
-            width: 450px;
-            height: 50px;
-            border: 1px solid rgba(255, 255, 255, 0.3);
-            border-radius: 4px;
-            background: none;
-            color: $brand-color-hover;
-            padding-left: 16px;
-            margin-bottom: 20px;
-
-            &::placeholder {
-                color: $color-footer-placeholder;
-            }
-        }
     }
 
 }
-
-
+@media (min-width:1200px) {
+    .footer-box {
+            @include common.container;
+            padding:60px 15px;
+        }
+    
+        .footer {    
+                display: flex;
+                justify-content: space-between;
+            &__contact {
+                display:block;
+                height: 100%;
+                margin-right: 70px;
+                & li:not(:first-child) {
+                    margin-bottom: 9px;
+                }
+            }
+    
+            
+    
+            &__container {
+                padding-top: 0px;
+                display: block;
+    
+                &--margin {
+                    margin-right: 70px;
+                    position:static;
+                    bottom:0px;
+                }    
+            }
+    
+            &__form {
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                
+            }
+    
+            &__input {
+                width: 358px;
+                
+                margin-bottom:0px;
+    
+                &::placeholder {
+                    color: $color-footer-placeholder;
+                }
+            }
+        }
+    }

@@ -179,8 +179,6 @@ p {
     border-bottom: 1px solid #ECECEC;
     width: 1200px;
     margin: 0px auto;
-    padding-left: 0px;
-    padding-right: 0px;
   }
   .header__name {
     margin-right: 93px;
@@ -629,8 +627,7 @@ p {
     display: block;
     width: 1200px;
     margin: 0px auto;
-    padding-top: 94px;
-    padding-bottom: 94px;
+    padding: 94px 15px;
   }
   .article {
     margin-bottom: 94px;
@@ -856,8 +853,7 @@ p {
   .team {
     display: block;
     width: 1200px;
-    padding-top: 94px;
-    padding-bottom: 94px;
+    padding: 94px 15px;
     padding-left: 0px;
     padding-right: 0px;
   }
@@ -990,10 +986,7 @@ p {
     min-width: 1200px;
     width: 1200px;
     margin: 0px auto;
-    padding-top: 94px;
-    padding-bottom: 94px;
-    padding-left: 0px;
-    padding-right: 0px;
+    padding: 94px 15px;
   }
   .clients h2 {
     margin-bottom: 50px;
@@ -1239,33 +1232,53 @@ p {
     bottom: 10px;
     position: relative;
   }
+}
+@media (min-width: 1200px) {
+  .footer-box {
+    width: 1200px;
+    margin: 0px auto;
+    padding: 60px 15px;
+  }
+  .footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .footer__contact {
+    display: block;
+    height: 100%;
+    margin-right: 70px;
+  }
+  .footer__contact li:not(:first-child) {
+    margin-bottom: 9px;
+  }
+  .footer__container {
+    padding-top: 0px;
+    display: block;
+  }
+  .footer__container--margin {
+    margin-right: 70px;
+    position: static;
+    bottom: 0px;
+  }
   .footer__form {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
+    -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-transition-property: background-color;
-    transition-property: background-color;
-    -webkit-transition-duration: 250ms;
-            transition-duration: 250ms;
-    -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-            transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
   .footer__input {
-    width: 450px;
-    height: 50px;
-    border: 1px solid rgba(255, 255, 255, 0.3);
-    border-radius: 4px;
-    background: none;
-    color: #2196F3;
-    padding-left: 16px;
-    margin-bottom: 20px;
+    width: 358px;
+    margin-bottom: 0px;
   }
   .footer__input::-webkit-input-placeholder {
     color: rgba(255, 255, 255, 0.6);
@@ -1600,4 +1613,10 @@ p {
   font-size: 20px;
   text-align: center;
   color: #212121;
+}
+
+@media (min-width: 1200px) {
+  .modal {
+    width: 528px;
+  }
 }/*# sourceMappingURL=main.css.map */

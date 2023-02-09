@@ -153,8 +153,7 @@
     .header {
         border-bottom: 1px solid $brand-color-header-border;
         @include common.container;
-        padding-left: 0px;
-        padding-right: 0px;
+        
 
         &__name {
             margin-right: 93px;
