@@ -254,9 +254,9 @@
             background: $brand-color-background-overall;
             border: 1px solid rgba(0, 0, 0, 0.1);
     
-            &:hover,
-            &:focus {
-                background-color: $brand-color-hover-2;
+            &:hover svg,
+            &:focus svg{
+                fill: $brand-color-hover;
             }
         }
     

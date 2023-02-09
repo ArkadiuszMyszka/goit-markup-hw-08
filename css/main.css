@@ -1420,8 +1420,8 @@ p {
   background: #FFFFFF;
   border: 1px solid rgba(0, 0, 0, 0.1);
 }
-.modal__button-close:hover, .modal__button-close:focus {
-  background-color: #268d19;
+.modal__button-close:hover svg, .modal__button-close:focus svg {
+  fill: #2196F3;
 }
 .modal__icon-close {
   display: -webkit-box;
