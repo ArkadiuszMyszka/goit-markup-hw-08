@@ -46,10 +46,7 @@
             color: $brand-color-hover;
         }
     }
-
-   
-
-    &__container {
+        &__container {
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -63,8 +60,6 @@
             margin-bottom: 20px;
         }
     }
-
-   
 
     &__portals {
         @include common.display;
@@ -87,8 +82,6 @@
                 fill: $brand-color-hover;
             }
     }
-
-    
 
     &__icon {
         width: 44px;
@@ -119,9 +112,7 @@
                 color: $color-footer-placeholder;
             }
     }
-
-    
-
+ 
     &__button {
         display: flex;
         align-items: center;
@@ -144,8 +135,6 @@
             }
     }
 
-    
-
     &__button-icon {
         width: 24px;
         height: 24px;
@@ -166,11 +155,9 @@
         flex-direction: row;
         
         &__contact {
-            
-            margin-right: 144px;
-           
+                    margin-right: 144px;
+          
         }
-
         &__container {
             
             &--margin {
@@ -181,9 +168,6 @@
 
         }
 
-
-
-        
         &__form {
             display: flex;
             flex-direction: column;
@@ -207,13 +191,6 @@
                 color: $color-footer-placeholder;
             }
         }
-
-
-
-        
-
-
-       
     }
 
 }
