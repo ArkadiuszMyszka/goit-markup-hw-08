@@ -4,12 +4,13 @@
     padding: 60px 15px;
     min-width: 320px;
         max-width: 1199px;
+        margin: 0px auto;
     &__section {
             display: flex;
             flex-direction: column;
             background-color: $brand-color-main-bottom-background;
             align-items: center;
-            margin: 0px auto;
+            
             & h2 {
                     font-size: 36px;
                     line-height: 1.167;
@@ -43,7 +44,7 @@
             flex-direction: column;
             list-style: none;
             justify-content: center;
-            margin-top: 50px;
+            margin-top: 30px;
             gap: 30px;
             padding-left: 15px;
             padding-right: 15px;
@@ -55,16 +56,14 @@
             background-color: $brand-color-background-overall;
             box-shadow: $main-bottom-list-box-shadow;
             border-radius: 0px 0px 4px 4px;
-            
-            
-            
+        
         }
     
         &__figure {
             margin: 0;
             margin-bottom: 16px;
             & img{
-                max-width:100%;
+                
                 display: block;
                 height: 460px;
                 width: 450px;
@@ -90,7 +89,6 @@
                 }
         }
     
-        
     
         &__link {
             fill: $brand-color-footer-icons-background;
@@ -102,8 +100,6 @@
                 }
         }
     
-        
-    
         &__icon {
             width: 44px;
             height: 44px;
@@ -112,3 +108,27 @@
         }
 }
 
+@media (min-width:768px){
+    .team {
+        &__box {
+            flex-wrap: wrap;
+            flex-basis: calc((100% - 1 * 30px) / 2);
+            flex-direction:row;
+            list-style: none;
+            padding-left: 0px;
+            padding-right: 0px;
+        }
+
+        &__figure {
+            
+            & img {
+                width: 354px;
+                height:374px ;
+            }
+        }
+
+    }
+
+
+
+}
