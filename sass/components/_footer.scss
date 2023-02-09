@@ -154,5 +154,68 @@
     }
 }
 
+@media (min-width:768px){
+.footer-box {
+        
+        min-width: 768px;
+    }
+
+    .footer {
+        
+        flex-wrap: wrap;
+        flex-direction: row;
+        
+        &__contact {
+            
+            margin-right: 144px;
+           
+        }
+
+        &__container {
+            
+            &--margin {
+                padding-top: 0px;
+                bottom:10px;
+                position:relative
+            }
+
+        }
+
+
+
+        
+        &__form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            transition-property: background-color;
+            @include common.transition;
+        }
+
+        &__input {
+            width: 450px;
+            height: 50px;
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            border-radius: 4px;
+            background: none;
+            color: $brand-color-hover;
+            padding-left: 16px;
+            margin-bottom: 20px;
+
+            &::placeholder {
+                color: $color-footer-placeholder;
+            }
+        }
+
+
+
+        
+
+
+       
+    }
+
+}
 
 

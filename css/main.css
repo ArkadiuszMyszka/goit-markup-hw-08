@@ -177,7 +177,7 @@ p {
     cursor: pointer;
   }
 }
-@media (max-width: 767px) {
+@media (max-width: 768px) {
   .menu-toggle {
     min-height: 40px;
     min-width: 40px;
@@ -208,12 +208,12 @@ p {
     fill: #2196F3;
   }
 }
-@media (max-width: 767px) and (min-width: 768px) {
+@media (max-width: 768px) and (min-width: 767px) {
   .menu-toggle {
     display: none;
   }
 }
-@media (max-width: 767px) {
+@media (max-width: 768px) {
   .menu-container {
     position: fixed;
     top: 0;
@@ -1055,6 +1055,70 @@ p {
   margin-left: 24px;
 }
 
+@media (min-width: 768px) {
+  .footer-box {
+    min-width: 768px;
+  }
+  .footer {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .footer__contact {
+    margin-right: 144px;
+  }
+  .footer__container--margin {
+    padding-top: 0px;
+    bottom: 10px;
+    position: relative;
+  }
+  .footer__form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-transition-property: background-color;
+    transition-property: background-color;
+    -webkit-transition-duration: 250ms;
+            transition-duration: 250ms;
+    -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+            transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .footer__input {
+    width: 450px;
+    height: 50px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 4px;
+    background: none;
+    color: #2196F3;
+    padding-left: 16px;
+    margin-bottom: 20px;
+  }
+  .footer__input::-webkit-input-placeholder {
+    color: rgba(255, 255, 255, 0.6);
+  }
+  .footer__input::-moz-placeholder {
+    color: rgba(255, 255, 255, 0.6);
+  }
+  .footer__input:-ms-input-placeholder {
+    color: rgba(255, 255, 255, 0.6);
+  }
+  .footer__input::-ms-input-placeholder {
+    color: rgba(255, 255, 255, 0.6);
+  }
+  .footer__input::placeholder {
+    color: rgba(255, 255, 255, 0.6);
+  }
+}
 .backdrop {
   position: fixed;
   left: 0;
