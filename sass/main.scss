@@ -1,10 +1,16 @@
 @use "./utils/variables" as *;
 @use "./utils/common";
 
+*{
+        outline:none;
+}
+
+
 body {
     font-family: $overall-fonts;
     background: $brand-color-background-overall;
     color: $brand-color-font-overall;
+    
 }
 
 h1,
@@ -22,12 +28,9 @@ p {
 @import "./components/article";
 @import "./components/team";
 @import "./components/clients";
+@import "./components/footer";
 
 
-.footer-box{
-
-        display: none;
-}
 
 .backdrop {
    
