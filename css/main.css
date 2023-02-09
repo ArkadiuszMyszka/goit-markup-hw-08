@@ -852,6 +852,39 @@ p {
     height: 374px;
   }
 }
+@media (min-width: 1200px) {
+  .team {
+    display: block;
+    width: 1200px;
+    padding-top: 94px;
+    padding-bottom: 94px;
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+  .team__box {
+    height: 100%;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-top: 50px;
+    gap: 30px;
+  }
+  .team__section {
+    margin: 0px auto;
+    width: 1200px;
+  }
+  .team__figure {
+    margin: 0;
+    margin-bottom: 16px;
+  }
+  .team__figure img {
+    display: block;
+    height: 260px;
+    width: 270px;
+  }
+}
 .clients {
   width: 480px;
   display: -webkit-box;

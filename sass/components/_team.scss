@@ -5,11 +5,13 @@
     min-width: 320px;
         max-width: 1199px;
         margin: 0px auto;
+
     &__section {
             display: flex;
             flex-direction: column;
             background-color: $brand-color-main-bottom-background;
             align-items: center;
+            
             
             & h2 {
                     font-size: 36px;
@@ -110,6 +112,7 @@
 
 @media (min-width:768px){
     .team {
+        
         &__box {
             flex-wrap: wrap;
             flex-basis: calc((100% - 1 * 30px) / 2);
@@ -128,7 +131,40 @@
         }
 
     }
+}
+@media (min-width:1200px) {
+.team {
+        display: block;
+        width: 1200px;
+        
+        @include common.section;
+        padding-left: 0px;
+        padding-right: 0px;
+        
+        
+        &__box {
+            height: 100%;
+            flex-wrap: nowrap;
+            justify-content: center;
+            margin-top: 50px;
+            gap: 30px;
+            
+        }
+                &__section {
+                    margin: 0px auto;
+                    width: 1200px;
+                }
 
+        &__figure {
+            margin: 0;
+            margin-bottom: 16px;
 
+            & img {
 
+                display: block;
+                height: 260px;
+                width: 270px;
+            }
+        }
+    }
 }
