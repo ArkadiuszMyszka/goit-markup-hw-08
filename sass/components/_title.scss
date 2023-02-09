@@ -4,7 +4,7 @@
     &__left {
             font-family: 'Raleway', sans-serif;
             color: $brand-color-titleleft;
-            font-size: 26px;
+            font-size: 24px;
             font-weight: 700;
             line-height: 1.1738;
             letter-spacing: 3%;
@@ -26,7 +26,16 @@
             }
         }
 }
-
+@media(min-width:1200px){
+.title{
+    &__left{
+        font-size: 24px;
+    }
+    &__right{
+        font-size: 26px;
+    }
+}
+}
 
 
 
