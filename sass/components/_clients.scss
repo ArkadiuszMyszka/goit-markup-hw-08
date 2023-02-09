@@ -36,9 +36,7 @@
                     --color3: #2196F3;
                 }
         }
-    
-        
-    
+       
         &__link {
             outline: none;
             display: flex;
@@ -51,8 +49,6 @@
                 }
         }
     
-       
-    
         &__icon {
             
             padding-left: 32px;
@@ -64,3 +60,21 @@
         }
 }
 
+@media(min-width:768px){
+    .clients {
+            min-width: 768px;
+           
+    
+            &__box {
+                flex-basis: calc((100% - 2 * 30px) / 3);
+                
+            }
+    
+            &__list {
+                
+                width: 226px;
+                height: 92px;
+                 }
+    
+        }
+}

@@ -840,6 +840,19 @@ p {
   cursor: pointer;
 }
 
+@media (min-width: 768px) {
+  .clients {
+    min-width: 768px;
+  }
+  .clients__box {
+    -ms-flex-preferred-size: calc((100% - 60px) / 3);
+        flex-basis: calc((100% - 60px) / 3);
+  }
+  .clients__list {
+    width: 226px;
+    height: 92px;
+  }
+}
 .footer-box {
   margin: 0 auto;
   background-color: #2F303A;
