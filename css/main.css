@@ -707,9 +707,8 @@ p {
 .team {
   display: block;
   background-color: #F5F4FA;
-  padding: 60px 15px;
+  padding: 60px 0px;
   min-width: 320px;
-  max-width: 1199px;
   margin: 0px auto;
 }
 .team__section {
@@ -723,6 +722,7 @@ p {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  padding: 0px 15px;
 }
 .team__section h2 {
   font-size: 36px;
@@ -851,10 +851,7 @@ p {
 @media (min-width: 1200px) {
   .team {
     display: block;
-    width: 1200px;
     padding: 94px 15px;
-    padding-left: 0px;
-    padding-right: 0px;
   }
   .team__box {
     height: 100%;
@@ -1235,25 +1232,25 @@ p {
     padding-top: 0px;
     bottom: 10px;
     position: relative;
+    margin-right: 70px;
   }
 }
 @media (min-width: 1200px) {
   .footer-box {
-    width: 1200px;
-    margin: 0px auto;
-    padding: 60px 15px;
+    padding: 60px 0px;
   }
   .footer {
+    margin: 0px auto;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
+    max-width: 1200px;
+    padding: 0px 15px;
   }
   .footer__contact {
-    display: block;
-    height: 100%;
     margin-right: 70px;
   }
   .footer__contact li:not(:first-child) {
