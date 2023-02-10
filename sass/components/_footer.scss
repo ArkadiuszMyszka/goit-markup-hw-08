@@ -5,16 +5,12 @@
     min-width:320px;
 }
 .footer {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    @include common.display;
+    flex-direction: column;    
     background-color: $brand-color-background-footer;
     &__contact {
-        display: flex;
+        @include common.display;
         flex-direction: column;
-        justify-content: center;
-        align-items: center;
         list-style: none;
         margin-top: 0px;
         margin-bottom: 0px;
