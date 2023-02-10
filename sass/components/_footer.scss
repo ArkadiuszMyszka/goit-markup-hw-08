@@ -3,35 +3,29 @@
     background-color: $brand-color-background-footer;
     padding: 60px 15px;
     min-width:320px;
-    
 }
-
 .footer {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     background-color: $brand-color-background-footer;
-    
     &__contact {
         display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
         list-style: none;
         margin-top: 0px;
         margin-bottom: 0px;
-            
-            padding-left: 0px;
-            & li:not(:first-child){
-                    margin-bottom: 8px;
-                }
+        padding-left: 0px;
+        & li:not(:first-child){
+            margin-bottom: 8px;
         }
+    }
     &__name {
         margin-bottom: 20px;
     }
-   
-
     &__address {
         font-size: 14px;
         line-height: 1.1714;
@@ -39,67 +33,60 @@
         color: $brand-color-address-footer;
         text-decoration: none;
         &--active {
-                transition-property: color;
-                @include common.transition;
-            }
+            transition-property: color;
+            @include common.transition;
+        }
         &--active:hover,
         &--active:focus-within {
             color: $brand-color-hover;
         }
     }
-        &__container {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        padding-top: 60px;
+    &__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 60px;
         &--margin {
-                margin-right: 0px;
-            }
+            margin-right: 0px;
+        }
         & h3 {
             size: 14px;
             color: $brand-color-background-overall;
             margin-bottom: 20px;
         }
     }
-
     &__portals {
         @include common.display;
         padding-left: 0px;
         gap: 10px;
         margin: 0px;
     }
-
     &__portals-list {
         list-style: none;
         --color3: #FFFFFF;
     }
-
     &__portals-link {
         fill: $brand-color-footer-icons-background;
         transition-property: fill;
-    @include common.transition;
+        @include common.transition;
         &:hover,
-            &:focus {
+        &:focus {
                 fill: $brand-color-hover;
-            }
+        }
     }
-
     &__icon {
         width: 44px;
         height: 44px;
         border-radius: 50%;
         cursor: pointer
     }
-
     &__form {
         display: flex;
         flex-direction: column;
         align-items: center;
-        
         transition-property: background-color;
         @include common.transition;
     }
-
     &__input {
         width: 450px;
         height: 50px;
@@ -110,10 +97,9 @@
         padding-left: 16px;
         margin-bottom: 20px;
         &::placeholder {
-                color: $color-footer-placeholder;
-            }
+            color: $color-footer-placeholder;
+        }
     }
- 
     &__button {
         display: flex;
         align-items: center;
@@ -131,11 +117,10 @@
         transition-property: background-color;
         @include common.transition;
         &:hover,
-            &:focus {
-                background-color: $brand-color-hover-2;
-            }
+        &:focus {
+            background-color: $brand-color-hover-2;
+        }
     }
-
     &__button-icon {
         width: 24px;
         height: 24px;
@@ -151,28 +136,21 @@
     }
 }
 @media (min-width:768px){
-.footer-box {
-        
+    .footer-box {
         min-width: 768px;
     }
-
     .footer {
-        
         flex-wrap: wrap;
         flex-direction: row;
-        
         &__contact {
                     margin-right: 144px;
-          
         }
         &__container {
-            
             &--margin {
                 padding-top: 0px;
                 bottom:10px;
                 position:relative;
                 margin-right: 70px;
-                
             }
 
         }
@@ -182,55 +160,41 @@
 }
 @media (min-width:1200px) {
     .footer-box {
-           
-            padding:60px 0px;
+        padding:60px 0px;
+    }
+    .footer {    
+        margin: 0px auto;
+        display: flex;
+        justify-content: space-between;
+        max-width: 1200px;
+        padding: 0px 15px;
+        &__contact {
+            margin-right: 70px;
+            & li:not(:first-child) {
+                margin-bottom: 9px;
+            }
         }
-    
-        .footer {    
-                margin: 0px auto;
-                display: flex;
-                justify-content: space-between;
-                max-width: 1200px;
-                padding: 0px 15px;
-            &__contact {
-                
-                
-                
+        &__container {
+            padding-top: 0px;
+            display: block;
+            &--margin {
                 margin-right: 70px;
-                & li:not(:first-child) {
-                    margin-bottom: 9px;
-                }
-            }
-    
-            
-    
-            &__container {
-                padding-top: 0px;
-                display: block;
-    
-                &--margin {
-                    margin-right: 70px;
-                    position:static;
-                    bottom:0px;
-                }    
-            }
-    
-            &__form {
-                display: flex;
-                flex-direction: row;
-                justify-content: center;
-                
-            }
-    
-            &__input {
-                width: 358px;
-                
-                margin-bottom:0px;
-    
-                &::placeholder {
-                    color: $color-footer-placeholder;
-                }
+                position:static;
+                bottom:0px;
+            }    
+        }
+        &__form {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+        }
+        &__input {
+            width: 358px;
+            margin-bottom:0px;
+            &::placeholder {
+                color: $color-footer-placeholder;
             }
         }
     }
+}
     

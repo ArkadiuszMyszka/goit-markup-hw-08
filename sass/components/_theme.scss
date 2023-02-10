@@ -2,66 +2,57 @@
     display: block;
     background-color: $brand-color-background-main-top;
     min-width: 320px;
-    
     &__section {
-            background-image: linear-gradient(0deg,
-                    rgba(47, 48, 58, 0.4) 0%,
-                    rgba(47, 48, 58, 0.4) 100%),
-                url("../images/mobile/450/peopleonmeeting.jpg");
-            background-size: cover;
-            background-position: center;
-            background-repeat: no-repeat;
-            background-color: $brand-color-background-main-top;
-            height: 400px;
-            
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            margin: 0px auto;
-            
-        }
+        background-image: linear-gradient(0deg,
+                rgba(47, 48, 58, 0.4) 0%,
+                rgba(47, 48, 58, 0.4) 100%),
+            url("../images/mobile/450/peopleonmeeting.jpg");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-color: $brand-color-background-main-top;
+        height: 400px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0px auto;
+    }
+    &__label {
+        display: flex;
+        max-width:400px;
+        margin-bottom: 30px;
+        font-weight: 900;
+        line-height: 1.364;
+        text-align: center;
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
+        color: $brand-color-main-top-text;
+    }
     
-        &__label {
-            display: flex;
-            max-width:400px;
-            
-            margin-bottom: 30px;
-            font-weight: 900;
-            
-            line-height: 1.364;
-            text-align: center;
-            letter-spacing: 0.06em;
-            text-transform: uppercase;
-            color: $brand-color-main-top-text;
-        }
-    
-        &__text {
-            font-weight: 900;
-            font-size: 26px;
-            line-height: 1.364;
-            text-align: center;
-            letter-spacing: 0.06em;
-            text-transform: uppercase;
-            color: $brand-color-main-top-text;
-            padding-left: 15px;
-            padding-right: 15px;
-        }
-    
-        &__button {
-            @include common.display;
-           
-            
-            cursor: pointer;
-            background-color: $brand-color-hover;
-            box-shadow: 0px 4px 4px $brand-color-main-button-boxshadow;
-            border-radius: 4px;
-            border-color: $brand-color-hover;
-            width: 200px;
-            height: 50px;
-            color: $brand-color-button-mainpage;
-            
-        }
+    &__text {
+        font-weight: 900;
+        font-size: 26px;
+        line-height: 1.364;
+        text-align: center;
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
+        color: $brand-color-main-top-text;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    &__button {
+        @include common.display;
+        cursor: pointer;
+        background-color: $brand-color-hover;
+        box-shadow: 0px 4px 4px $brand-color-main-button-boxshadow;
+        border-radius: 4px;
+        border-color: $brand-color-hover;
+        width: 200px;
+        height: 50px;
+        color: $brand-color-button-mainpage;
+    }
 }
 
 @media (min-device-pixel-ratio:2), (min-resolution: 192dpi),(min-resolution: 2ddpx) {
@@ -76,71 +67,62 @@
     .theme{
         min-width: 768px;
         display: block;
-            background-color: $brand-color-background-main-top;
+        background-color: $brand-color-background-main-top;
         &__section {
-                background-image: linear-gradient(0deg,
-                        rgba(47, 48, 58, 0.4) 0%,
-                        rgba(47, 48, 58, 0.4) 100%),
-                    url("../images/tablet/peopleonmeeting768.jpg");
-                background-size: cover;
-                background-position: center;
-                background-repeat: no-repeat;
-                background-color: $brand-color-background-main-top;
-                height: 400px;
-        
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                align-items: center;
-                margin: 0px auto;
-        
-            }
-    }
-        @media (min-device-pixel-ratio:2),
-        (min-resolution: 192dpi),
-        (min-resolution: 2ddpx) {
-            .theme__section {
-                background-image: linear-gradient(0deg,
-                        rgba(47, 48, 58, 0.4) 0%,
-                        rgba(47, 48, 58, 0.4) 100%),
-                    url("../images/tablet/peopleonmeeting1536.jpg");
-            }
+            background-image: linear-gradient(0deg,
+                    rgba(47, 48, 58, 0.4) 0%,
+                    rgba(47, 48, 58, 0.4) 100%),
+                url("../images/tablet/peopleonmeeting768.jpg");
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-color: $brand-color-background-main-top;
+            height: 400px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin: 0px auto;
         }
+    }
+    @media (min-device-pixel-ratio:2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2ddpx) {
+        .theme__section {
+            background-image: linear-gradient(0deg,
+                    rgba(47, 48, 58, 0.4) 0%,
+                    rgba(47, 48, 58, 0.4) 100%),
+                url("../images/tablet/peopleonmeeting1536.jpg");
+        }
+    }
 }
 @media (min-width:1200px){
     .theme {
         min-width: 1200px;
         &__section {
-                background-image: linear-gradient(0deg,
-                        rgba(47, 48, 58, 0.4) 0%,
-                        rgba(47, 48, 58, 0.4) 100%),
-                    url("../images/desktop/peopleonmeeting1600.jpg");
-                height: 600px;
-                width:1200px;
-                
-            }
-        
-            &__label {
-                
-                max-width: 700px;
-                margin-bottom: 30px;
-                }
-        
-            &__text {
-                font-size: 44px;
-                
-            }
-        
+            background-image: linear-gradient(0deg,
+                    rgba(47, 48, 58, 0.4) 0%,
+                    rgba(47, 48, 58, 0.4) 100%),
+                url("../images/desktop/peopleonmeeting1600.jpg");
+            height: 600px;
+            width:1200px;
         }
-        
-        @media (min-device-pixel-ratio:2),
-        (min-resolution: 192dpi),
-        (min-resolution: 2ddpx) {
-            .theme__section {
-                background-image: linear-gradient(0deg,
-                        rgba(47, 48, 58, 0.4) 0%,
-                        rgba(47, 48, 58, 0.4) 100%),
-                    url("../images/desktop/peopleonmeeting3200.jpg");
+        &__label {
+            max-width: 700px;
+            margin-bottom: 30px;
             }
+        &__text {
+            font-size: 44px;
+        }
+    }        
+    @media (min-device-pixel-ratio:2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2ddpx) {
+        .theme__section {
+            background-image: linear-gradient(0deg,
+                    rgba(47, 48, 58, 0.4) 0%,
+                    rgba(47, 48, 58, 0.4) 100%),
+                url("../images/desktop/peopleonmeeting3200.jpg");
         }
     }
+}

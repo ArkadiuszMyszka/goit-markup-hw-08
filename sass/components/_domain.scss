@@ -1,44 +1,39 @@
 @media (max-width: 1199px){
     .domain {
-            display: none;
-        }
+        display: none;
+    }
 }
 .domain {
-        background-color: $brand-color-background;
-        
+    background-color: $brand-color-background;
     & h2 {
-            font-size: 36px;
-            line-height: 1.167;
-            text-align: center;
-            letter-spacing: 0.03em;
+        font-size: 36px;
+        line-height: 1.167;
+        text-align: center;
+        letter-spacing: 0.03em;
         }
-    
-        &__box {
-            display: flex;
-            margin-bottom: 0px;
-            align-items: center;
-            list-style: none;
-            margin-top: 50px;
-            padding: 0px;
-            justify-content: center;
-            gap: 30px;
-            
-        }
-    
-        &__list {
-            position: relative;
-            
-        }
-        &__label {
-            @include common.display;
-            height: 70px;
-            width: 100%;
-            position: absolute;
-            bottom: 0px;
-            color: $brand-color-font-overall-2;
-            font-size: 14px;
-            text-align: center;
-            background-color: $color-main-central-img-text;
-        }
+    &__box {
+        display: flex;
+        margin-bottom: 0px;
+        align-items: center;
+        list-style: none;
+        margin-top: 50px;
+        padding: 0px;
+        justify-content: center;
+        gap: 30px;
+    }
+    &__list {
+        position: relative;
+    }
+    &__label {
+        @include common.display;
+        height: 70px;
+        width: 100%;
+        position: absolute;
+        bottom: 0px;
+        color: $brand-color-font-overall-2;
+        font-size: 14px;
+        text-align: center;
+        background-color: $color-main-central-img-text;
+    }
 }
 

@@ -1,40 +1,36 @@
 .title{
     text-decoration: none;
-    
     &__left {
-            font-family: 'Raleway', sans-serif;
-            color: $brand-color-titleleft;
-            font-size: 24px;
-            font-weight: 700;
-            line-height: 1.1738;
-            letter-spacing: 3%;
+        font-family: 'Raleway', sans-serif;
+        color: $brand-color-titleleft;
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 1.1738;
+        letter-spacing: 3%;
+    }
+    &__right {
+        font-family: 'Raleway', sans-serif;
+        font-size: 24px;
+        font-weight: 400;
+        line-height: 1.383;
+        letter-spacing: 3%;
+        &--header {
+            color: $brand-color-titleright;
         }
-    
-        &__right {
-            font-family: 'Raleway', sans-serif;
-            font-size: 24px;
-            font-weight: 400;
-            line-height: 1.383;
-            letter-spacing: 3%;
-    
-            &--header {
-                color: $brand-color-titleright;
-            }
-    
-            &--footer {
-                color: $brand-color-titleright-footer;
-            }
+        &--footer {
+            color: $brand-color-titleright-footer;
         }
+    }
 }
 @media(min-width:1200px){
-.title{
-    &__left{
-        font-size: 24px;
+    .title{
+        &__left{
+            font-size: 24px;
+        }
+        &__right{
+            font-size: 26px;
+        }
     }
-    &__right{
-        font-size: 26px;
-    }
-}
 }
 
 

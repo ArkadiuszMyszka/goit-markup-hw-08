@@ -4,103 +4,94 @@
     align-items: center;
     justify-content: center;
     background-color: $brand-color-background;
-   padding:60px 15px 45px 15px;
-   margin: 0 auto;
-    
+    padding: 60px 15px 45px 15px;
+    margin: 0 auto;
 
 }
 
 .article {
-   
-    
     & h3 {
-            font-weight: 700;
-            font-size: 14px;
-            line-height: 1.1428;
-            letter-spacing: 0.03em;
-            text-transform: uppercase;
-            margin-bottom: 10px;
-        }
-    
-        & p {
-            
-            font-size: 14px;
-            line-height: 1.714;
-            letter-spacing: 0.03em;
-            color: $brand-color-article-p;
-        }
-    
-        &__box {
-            display: block;
-            list-style: none;
-            padding: 0px;
-            margin: 0px;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 1.1428;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+        margin-bottom: 10px;
+    }
+
+    & p {
+        font-size: 14px;
+        line-height: 1.714;
+        letter-spacing: 0.03em;
+        color: $brand-color-article-p;
+    }
+
+    &__box {
+        display: block;
+        list-style: none;
+        padding: 0px;
+        margin: 0px;
+        justify-content: center;
+        gap: 30px;
+        & li {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
             justify-content: center;
-            gap: 30px;
-            & li {
-                display: flex;
-                    flex-direction: column;
-                    align-items: center;
-                    justify-content: center;
-                    margin-left: auto;
-                        margin-right: auto;
-            }
+            margin-left: auto;
+            margin-right: auto;
         }
-    
-        &__list {
-            @include common.display;
-            width: 100%;
-            height: 120px;
-            background-color: $brand-color-main-article-box-background;
-            margin-bottom: 30px;
-            margin-top: 30px;
-            border-radius: 4px;
-        }
-    
-        &__images {
-            width: 70px;
-            height: 70px;
-        }
+    }
+    &__list {
+        @include common.display;
+        width: 100%;
+        height: 120px;
+        background-color: $brand-color-main-article-box-background;
+        margin-bottom: 30px;
+        margin-top: 30px;
+        border-radius: 4px;
+    }
+    &__images {
+        width: 70px;
+        height: 70px;
+    }
 }
 
-@media (min-width:768px){
+@media (min-width:768px) {
     .article {
-
         &__box {
             flex-basis: calc((100% - 1 * 30px) / 2);
-                gap: 30px;
-                display: flex;
-                flex-wrap: wrap;
-                
+            gap: 30px;
+            display: flex;
+            flex-wrap: wrap;
+
             & li {
-                
+
                 width: calc((100% - 1 * 30px) / 2);
             }
         }
-        
     }
-
 }
+
 @media (min-width:1200px) {
     .presentation {
-            display: block;
-            @include common.container;
-            @include common.section;
-        }
-    
-        .article {
-            margin-bottom: 94px;
-            
-            &__box {
-                flex-wrap: nowrap;
-                list-style: none;
-            }
-    
-            &__list {
-                @include common.display;
-                width: 100%;
-                margin-top: 0px;
-            }
+        display: block;
+        @include common.container;
+        @include common.section;
+    }
+
+    .article {
+        margin-bottom: 94px;
+
+        &__box {
+            flex-wrap: nowrap;
+            list-style: none;
         }
 
+        &__list {
+            @include common.display;
+            width: 100%;
+            margin-top: 0px;
+        }
+    }
 }
