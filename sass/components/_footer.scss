@@ -2,7 +2,8 @@
     margin: 0 auto;
     background-color: $brand-color-background-footer;
     padding: 60px 15px;
-    width: 480px;
+    min-width:320px;
+    
 }
 
 .footer {
@@ -142,7 +143,13 @@
         margin-left: 24px;
     }
 }
-
+@media(max-width:479px){
+    .footer{
+        &__input{
+            max-width:320px;
+        }
+    }
+}
 @media (min-width:768px){
 .footer-box {
         
@@ -220,3 +227,4 @@
             }
         }
     }
+    

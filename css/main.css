@@ -783,8 +783,8 @@ p {
 }
 .team__figure img {
   display: block;
-  height: 460px;
-  width: 450px;
+  height: 100%;
+  min-width: 260px;
 }
 .team__figcaption {
   margin-top: 30px;
@@ -882,7 +882,7 @@ p {
   }
 }
 .clients {
-  width: 480px;
+  min-width: 320px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1014,7 +1014,7 @@ p {
   margin: 0 auto;
   background-color: #2F303A;
   padding: 60px 15px;
-  width: 480px;
+  min-width: 320px;
 }
 
 .footer {
@@ -1212,6 +1212,11 @@ p {
   margin-left: 24px;
 }
 
+@media (max-width: 479px) {
+  .footer__input {
+    max-width: 320px;
+  }
+}
 @media (min-width: 768px) {
   .footer-box {
     min-width: 768px;
@@ -1364,7 +1369,7 @@ p {
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   opacity: 1;
-  width: 450px;
+  max-width: 450px;
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
