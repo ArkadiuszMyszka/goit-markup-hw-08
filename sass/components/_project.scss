@@ -1,0 +1,86 @@
+
+
+.project {
+    background-color: $brand-color-background;
+    border-bottom: 1px solid $brand-color-port-central-border;
+    flex-basis: calc((100% - 2 * 30px) / 3);
+    max-width: 370px;
+    cursor: pointer;
+    transition-property: box-shadow;
+    @include common.transition;
+    &__figcaption {
+            padding: 20px 24px;
+            border-right: $brand-color-portfolio-central-border;
+            border-bottom: $brand-color-portfolio-central-border;
+            border-left: $brand-color-portfolio-central-border;
+        }
+    
+        &__title {
+            font-size: 18px;
+            line-height: 2;
+            letter-spacing: 0.06em;
+            margin-bottom: 4px;
+        }
+    
+        &__list {
+            display: flex;
+            list-style: none;
+            flex-wrap: wrap;
+            gap: 30px;
+            padding: 0px;
+            justify-content: center;
+            margin: 0px;
+        }
+                &:hover,
+                &:focus {
+                    box-shadow: $portfolio-central-images-list-box-shadow;
+                }
+        
+                &:hover &__article {
+                    transform: translateY(0%)
+                }
+        
+                &__figure {
+                    position: relative;
+                    display: flex;
+                    flex-direction: column;
+                    margin: 0px;
+                }
+        
+                &__photo {
+                    width: 370px;
+                    height: 294px;
+                }
+        
+                &__box {
+                    width: 370px;
+                    height: 294px;
+                    position: absolute;
+                    overflow: hidden;
+                }
+        
+                &__article {
+                    display: flex;
+                    width: 370px;
+                    height: 294px;
+                    background-color: $brand-color-portfolio-central-overlay;
+                    transform: translateY(101%);
+                    transition-property: box-shadow transform;
+                    @include common.transition;
+                }
+        
+                &__text {
+                    margin: 0px;
+                    font-weight: 400;
+                    @include common.display;
+                    letter-spacing: 0.03em;
+                    color: $brand-color-font-overall-2;
+                    font-size: 18px;
+                    padding-left: 24px;
+                    padding-right: 24px;
+                    width: 100%;
+                    height: 100%;
+                    line-height: 28px
+                }
+}
+
